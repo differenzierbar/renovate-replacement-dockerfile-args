@@ -12,12 +12,12 @@
       "matchDatasources": ["docker"],
       "matchPackageNames": [
         "amd64/python",
-        "arm64v8/python",
+        "arm64v8/python"
       ],
-      "replacementName": "amd64/python",
-      "overridePackageName": "amd64/python",
-      "overrideDepName": "amd64/python",
+      "replacementName": "arm64v8/python",
+      "overridePackageName": "arm64v8/python",
+      "overrideDepName": "arm64v8/python",
       "enabled": true
-    },
-  ],
+    }
+  ]
 }
