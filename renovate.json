@@ -2,12 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "matchPackageNames": [
-        "*"
-      ],
-      "enabled": false
-    },
-    {
       "description": "Python replacement",
       "matchDatasources": ["docker"],
       "matchPackageNames": [
@@ -16,8 +10,7 @@
       ],
       "replacementName": "arm64v8/python",
       "overridePackageName": "arm64v8/python",
-      "overrideDepName": "arm64v8/python",
-      "enabled": true
+      "overrideDepName": "arm64v8/python"
     }
   ]
 }
