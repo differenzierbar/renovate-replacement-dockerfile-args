@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "semanticCommits": "enabled",
   "branchPrefix": "renovate/",
-  "additionalBranchPrefix": "{{depType}}-",
   "dependencyDashboard": true,
   "onboarding": false,
   "requireConfig": "optional",
