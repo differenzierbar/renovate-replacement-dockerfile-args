@@ -1,0 +1,40 @@
+name: Renovate
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}
+
+jobs:
+  renovate:
+    permissions:
+      contents: write
+      id-token: write
+      issues: write
+      pull-requests: write
+      security-events: read
+      actions: write
+
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Renovate
+        uses: renovatebot/github-action@v44.0.5
+        with:
+          configurationFile: .github/renovate-global.json
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          env-regex: "^(?:RENOVATE_\\w+|LOG_LEVEL|(?:HTTPS?|NO)_PROXY|(?:https?|no)_proxy)$"
+        env:
+          RENOVATE_ENDPOINT: "${{ github.api_url }}"
+          # LOG_LEVEL: ${{ runner.debug == '1' && 'debug' || 'info' }}
+          LOG_LEVEL: debug
+          RENOVATE_GITHUB_TOKEN_WARN: "false"
+          RENOVATE_REPOSITORIES: ${{ github.repository }}
+          RENOVATE_BASE_BRANCH_PATTERNS: ${{ github.ref_name }}
+
