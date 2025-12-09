@@ -5,8 +5,7 @@
       "description": "Python replacement",
       "matchDatasources": ["docker"],
       "matchPackageNames": [
-        "amd64/python",
-        "arm64v8/python"
+        "amd64/python"
       ],
       "replacementName": "arm64v8/python",
       "overridePackageName": "arm64v8/python",
