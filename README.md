@@ -6,11 +6,11 @@ Then replace the current `h1` with the Renovate Issue/Discussion number.
 
 ## Current behavior
 
-Explain the current behavior here.
+Renovate fails to create the PR for the (replacement) dependency update in the [Dockerfile](Dockerfile) containing dependencies in ARGs.
 
 ## Expected behavior
 
-Explain the expected behavior here.
+Renovate creates the PR (as it does when the Dockerfile does not contain ARGs with dependencies).
 
 ## Link to the Renovate issue or Discussion
 
