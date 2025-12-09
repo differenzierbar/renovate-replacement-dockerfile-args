@@ -11,24 +11,4 @@
   "vulnerabilityAlerts": {
     "enabled": false
   },
-  "packageRules": [
-    {
-      "matchPackageNames": [
-        "*"
-      ],
-      "enabled": false
-    },
-    {
-      "description": "Python replacement",
-      "matchDatasources": ["docker"],
-      "matchPackageNames": [
-        "amd64/python",
-        "arm64v8/python",
-      ],
-      "replacementName": "amd64/python",
-      "overridePackageName": "amd64/python",
-      "overrideDepName": "amd64/python",
-      "enabled": true
-    },
-  ],
 }
