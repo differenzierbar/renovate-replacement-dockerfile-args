@@ -7,6 +7,12 @@ Then replace the current `h1` with the Renovate Issue/Discussion number.
 ## Current behavior
 
 Renovate fails to create the PR for the (replacement) dependency update in the [Dockerfile](Dockerfile) containing dependencies in ARGs.
+```
+ARG BASE_IMAGE_NAME=amd64/python
+ARG BASE_IMAGE_TAG=3.11
+
+FROM  ${BASE_IMAGE_NAME}:${BASE_IMAGE_TAG}
+```
 
 ## Expected behavior
 
