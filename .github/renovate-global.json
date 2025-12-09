@@ -1,0 +1,34 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "semanticCommits": "enabled",
+  "branchPrefix": "renovate/",
+  "additionalBranchPrefix": "{{depType}}-",
+  "dependencyDashboard": true,
+  "onboarding": false,
+  "requireConfig": "optional",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "vulnerabilityAlerts": {
+    "enabled": false
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "*"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "Python replacement",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": [
+        "amd64/python",
+        "arm64v8/python",
+      ],
+      "replacementName": "amd64/python",
+      "overridePackageName": "amd64/python",
+      "overrideDepName": "amd64/python",
+      "enabled": true
+    },
+  ],
+}
