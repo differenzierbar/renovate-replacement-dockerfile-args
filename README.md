@@ -13,6 +13,15 @@ ARG BASE_IMAGE_TAG=3.11
 
 FROM  ${BASE_IMAGE_NAME}:${BASE_IMAGE_TAG}
 ```
+Log messages:
+```
+DEBUG: depName mismatch (repository=differenzierbar/renovate-replacement-dockerfile-args, baseBranch=main, packageFile=Dockerfile, branch=renovate/arm64v8-python-3.x)
+       "manager": "dockerfile",
+       "currentDepName": "arm64v8/python",
+       "newDepName": "python"
+ WARN: Error updating branch: update failure (repository=differenzierbar/renovate-replacement-dockerfile-args, baseBranch=main, branch=renovate/arm64v8-python-3.x)
+```
+
 
 Renovate does **not** fail to create a PR for (replacement) dependency updates in Dockerfiles when the Dockerfile does **not** contain ARGs with dependencies:
 ```
