@@ -3,5 +3,3 @@ ARG BASE_IMAGE_TAG=3.11
 
 FROM  ${BASE_IMAGE_NAME}:${BASE_IMAGE_TAG}
 
-ENTRYPOINT ["sh", "-c"]
-CMD ["echo hello"]
