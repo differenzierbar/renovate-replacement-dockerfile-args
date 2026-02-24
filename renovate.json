@@ -5,11 +5,11 @@
       "description": "Python replacement",
       "matchDatasources": ["docker"],
       "matchPackageNames": [
-        "amd64/python"
+        "bitnami/grafana"
       ],
-      "replacementName": "arm64v8/python",
-      "overridePackageName": "arm64v8/python",
-      "overrideDepName": "arm64v8/python"
+      "replacementName": "grafana/grafana",
+      "overridePackageName": "grafana/grafana",
+      "overrideDepName": "grafana/grafana"
     }
   ]
 }
