@@ -7,9 +7,7 @@
       "matchPackageNames": [
         "bitnami/grafana"
       ],
-      "replacementName": "grafana/grafana",
-      "overridePackageName": "grafana/grafana",
-      "overrideDepName": "grafana/grafana"
+      "replacementName": "grafana/grafana"
     }
   ]
 }
