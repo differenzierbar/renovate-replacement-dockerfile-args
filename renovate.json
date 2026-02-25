@@ -8,12 +8,12 @@
       "enabled": false
     },
     {
-      "description": "Python replacement",
+      "description": "replace ubuntu with debian",
       "matchDatasources": ["docker"],
       "matchPackageNames": [
-        "bitnami/grafana"
+        "ubuntu"
       ],
-      "replacementName": "grafana/grafana",
+      "replacementName": "debian",
       "enabled": true
     }
   ]

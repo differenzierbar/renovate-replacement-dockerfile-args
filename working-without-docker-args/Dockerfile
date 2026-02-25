@@ -1,2 +1,2 @@
-FROM bitnami/grafana:9.0.0
+FROM ubuntu:24.04
 
