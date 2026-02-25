@@ -14,7 +14,9 @@
         "ubuntu"
       ],
       "replacementName": "debian",
-      "enabled": true
+      "enabled": true,
+      "overridePackageName": "debian",
+      "overrideDepName": "debian"
     }
   ]
 }
