@@ -1,4 +1,4 @@
-ARG BASE_IMAGE_NAME=docker.io/ubuntu/python
+ARG BASE_IMAGE_NAME=docker.io/python
 ARG BASE_IMAGE_TAG=3.13-25.10_stable
 
 FROM  ${BASE_IMAGE_NAME}:${BASE_IMAGE_TAG}
