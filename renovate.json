@@ -14,7 +14,9 @@
         "docker.io/ubuntu/python"
       ],
       "replacementName": "docker.io/python",
-      "enabled": true
+      "enabled": true,
+      "overridePackageName": "docker.io/python",
+      "overrideDepName": "docker.io/python"
     }
   ]
 }
