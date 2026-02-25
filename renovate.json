@@ -8,15 +8,15 @@
       "enabled": false
     },
     {
-      "description": "replace ubuntu with debian",
+      "description": "replace ubuntu python with python",
       "matchDatasources": ["docker"],
       "matchPackageNames": [
-        "ubuntu"
+        "docker.io/ubuntu/python"
       ],
-      "replacementName": "debian",
+      "replacementName": "docker.io/python",
       "enabled": true,
-      "overridePackageName": "debian",
-      "overrideDepName": "debian"
+      // "overridePackageName": "docker.io/python",
+      // "overrideDepName": "docker.io/python"
     }
   ]
 }
