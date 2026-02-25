@@ -1,2 +1,2 @@
-FROM ubuntu:24.04
+FROM debian:24.04
 
