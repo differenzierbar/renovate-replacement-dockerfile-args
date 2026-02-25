@@ -15,6 +15,7 @@
       ],
       "replacementName": "debian",
       "enabled": true,
+      "overridePackageName": "debian",
       "overrideDepName": "debian"
     }
   ]
